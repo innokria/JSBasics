@@ -57,7 +57,17 @@ var x : IForm<IProfile> = {
     content: {name: "", email: ""}
 }
 
+// another way to do the above using intersection
+interface IProfile {
+    name: string;
+    email: string;
+}
+interface IForm {
+    formTitle: string;
+}
+type IProfileForm = IForm & IProfile;
 
+function formDisplay(resource: IProfileForm) { }
 
 
 ```
