@@ -33,4 +33,31 @@ let a = Object.keys(number).filter(x=>number[x]==='d'); // array of index
 
 console.log(k);//'0'
 console.log(a);//['0']
+
+
+
+// Generics Sample 
+// if you want to add formTitle to existing interface
+
+
+interface IMyContent {}
+
+interface IProfile extends IMyContent {
+    name: string;
+    email: string;
+}
+
+interface IForm<T extends IMyContent> {
+    formTitle: string;
+    content: T;
+}
+
+var x : IForm<IProfile> = {
+    formTitle: "",
+    content: {name: "", email: ""}
+}
+
+
+
+
 ```
