@@ -70,4 +70,7 @@ type IProfileForm = IForm & IProfile;
 function formDisplay(resource: IProfileForm) { }
 
 
+
+# Object.assign it is possible to mutate an existing object
+# using a spread you are always creating a new object:
 ```
