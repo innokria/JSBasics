@@ -78,5 +78,7 @@ function formDisplay(resource: IProfileForm) { }
 Deep copies duplicate everything. A deep copy of a collection is two collections with all of the elements in the original collection duplicated.
 
 
+#In a shallow copy, object B points to object A's location in memory. In deep copy, all things in object A's memory location get copied to object B's memory location.
+
 
 ```
