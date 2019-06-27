@@ -94,4 +94,5 @@ console.log(unboundGetX()); // The function gets invoked at the global scope
 var boundGetX = unboundGetX.bind(module);
 console.log(boundGetX());
 // expected output: 42
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
 ```
