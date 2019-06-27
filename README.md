@@ -80,5 +80,18 @@ Deep copies duplicate everything. A deep copy of a collection is two collections
 
 #In a shallow copy, object B points to object A's location in memory. In deep copy, all things in object A's memory location get copied to object B's memory location.
 
+var module = {
+  x: 42,
+  getX: function() {
+    return this.x;
+  }
+}
 
+var unboundGetX = module.getX;
+console.log(unboundGetX()); // The function gets invoked at the global scope
+// expected output: undefined
+
+var boundGetX = unboundGetX.bind(module);
+console.log(boundGetX());
+// expected output: 42
 ```
