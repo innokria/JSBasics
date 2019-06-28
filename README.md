@@ -95,4 +95,15 @@ var boundGetX = unboundGetX.bind(module);
 console.log(boundGetX());
 // expected output: 42
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+
+Remember that objects, including arrays are passed by reference while strings, booleans and numbers are passed by value.
+
+var strA = "hi there";
+var strB = strA;
+strB="bye there!";
+console.log (strA) // hi there
+var objA = {prop1: 42};
+var objB = objA; 
+objB.prop1 = 90;
+console.log(objA) // 90
 ```
