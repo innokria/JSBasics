@@ -106,4 +106,57 @@ var objA = {prop1: 42};
 var objB = objA; 
 objB.prop1 = 90;
 console.log(objA) // 90
+
+
+
+const array = ["one", "two", "three"]
+array.forEach((item, index,arr)=> {
+  console.log(item, index,arr);
+});
+
+
+array.forEach((key,item)=>{
+  
+  console.log(typeof key);
+  
+})
+
+var a = ["a", "b", "c"];
+a.forEach(function(entry) {
+    console.log(entry);
+});
+
+
+let arrWithObjects = [{
+    name: 'Jon',
+    age: 32
+  },
+  {
+    name: 'Elise',
+    age: 33
+  }
+];
+// NOTE: Destructuring objects while using shorthand functions 
+// are required to be surrounded by parenthesis
+arrWithObjects.forEach( ({ name, age: aliasForAge }) => {
+  console.log(name, aliasForAge)
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
