@@ -158,9 +158,33 @@ let findDuplicates = (arr) => arr.filter((item, index) => arr.indexOf(item) != i
 console.log(findDuplicates(strArray)) // w
 
 
-
+#########################################################################################
 #kotlin
 https://chercher.tech/kotlin/duplicate-string-character-count
+
+/**
+ * You can edit, run, and share this code. 
+ * play.kotlinlang.org 
+ */
+import java.util.Arrays;
+fun removeArrayDuplicates(duplicates: Array<String>): Array<String> {
+    return Arrays.asList(*duplicates).toSet().toTypedArray()
+}
+
+fun main(args: Array<String>) {
+    val duplicates = arrayOf("a", "b", "c", "a", "c")
+    println(Arrays.toString(removeArrayDuplicates(duplicates)))
+    // [a, b, c]
+}
+
+
+
+##################### kotlin ends
+
+
+
+
+
 
 
 
