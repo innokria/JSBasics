@@ -162,6 +162,8 @@ console.log(findDuplicates(strArray)) // w
 #kotlin
 https://chercher.tech/kotlin/duplicate-string-character-count
 
+A Set is a collection that contains no duplicate events, so converting an array to a Set will get rid of all the duplicates.
+
 /**
  * You can edit, run, and share this code. 
  * play.kotlinlang.org 
