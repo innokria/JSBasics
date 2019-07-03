@@ -150,7 +150,12 @@ arrWithObjects.forEach( ({ name, age: aliasForAge }) => {
 
 
 
+# find duplicates
+let strArray = [ "q", "w", "w", "e", "i", "u", "r"];
 
+let findDuplicates = (arr) => arr.filter((item, index) => arr.indexOf(item) != index)
+
+console.log(findDuplicates(strArray)) // w
 
 
 
