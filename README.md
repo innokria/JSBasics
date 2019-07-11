@@ -179,6 +179,9 @@ fun main(args: Array<String>) {
     // [a, b, c]
 }
 
+# merge 2 aray  into 1
+where s is array ["1","2"]
+let result = [].concat.apply([], s);
 
 
 ##################### kotlin ends
