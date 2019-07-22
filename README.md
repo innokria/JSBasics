@@ -195,6 +195,13 @@ let result = [].concat.apply([], s);
 
 https://github.com/sudheerj/javascript-interview-questions
 https://github.com/topics/javascript-interview-questions
+
+
+#BIG O
+https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/
+
+
+
 ```
 
 
