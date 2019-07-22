@@ -198,6 +198,12 @@ https://github.com/topics/javascript-interview-questions
 
 
 #BIG O
+
+ O(1) - Constant time   - same time for any inout  ) even or odd no 
+3. O(n) - Linear time   --  one loop ( takes all element) ( find find the maximum value from an unsorted array.
+4. O(n^2) - Quadratic time       -- double loop ( find duplicates in array)
+5. O(n^c) - Polynomial time
+6. O(log n) - Logarithmic time --- binary swarch  ( find an keyword in dictionrty - divide item into half n scan ) 
 https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/
 
 
