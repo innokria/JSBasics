@@ -210,6 +210,27 @@ https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer
 GIT TDD 
 https://gist.github.com/up1/ae097e63c9cc09aed89b64333b2e98b6
 
+
+
+
+
+
+
+
+
+
+# remove all nulls and undefined from array
+// where doc is an array 
+ let x = Object.keys(doc).reduce(
+        (acc, key) =>
+          doc[key] == null || (doc[key].length == 0 && delete doc[key]) ? acc : { ...acc, [key]: doc[key] },
+        {},
+      );
+
+
+
+
+
 ```
 
 
