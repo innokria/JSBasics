@@ -227,7 +227,18 @@ https://gist.github.com/up1/ae097e63c9cc09aed89b64333b2e98b6
         {},
       );
 
+# delete obj from array
+const obj = {
+  prop1: 'foo',
+  prop2: 'bar',
+  prop3: 'baz'
+}
 
+;[ 'prop1', 'prop2' ].forEach(prop => {
+  delete obj[prop]
+})
+
+console.log(obj.prop1, obj.prop2, obj.prop3)
 
 
 
