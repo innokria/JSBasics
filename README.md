@@ -242,6 +242,18 @@ console.log(obj.prop1, obj.prop2, obj.prop3)
 
 
 
+# remove null and empty and get unqiue data from array
+ let aa = [
+        ...new Set(
+          []
+            .concat(...Object.values(doc))
+            .filter((v) => {
+              return v && typeof v !== 'object';
+            })
+            .map((v) => String(v)),
+        ),
+      ];
+
 ```
 
 
