@@ -254,6 +254,53 @@ console.log(obj.prop1, obj.prop2, obj.prop3)
         ),
       ];
 
+
+
+
+#linked list
+function linkedList(arr){
+  return arr.reduceRight((next, value) => ({value, next}), null);
+}
+
+l = [3, 1, 2, 3, 4, 5];
+
+console.log(linkedList(l));
+
+{
+  "value": 3,
+  "next": {
+    "value": 1,
+    "next": {
+      "value": 2,
+      "next": {
+        "value": 3,
+        "next": {
+          "value": 4,
+          "next": {
+            "value": 5,
+            "next": null
+          }
+        }
+      }
+    }
+  }
+}
+
+
+# recursive method 
+
+ getItemsByParentIds(items: string[]) {
+    let ids = [];
+
+   
+    const pId = items.map((a) => a.id);
+    if (pId[0] !== null) {
+      ids.push(...pId);
+      ids = ids.concat(this.getItemsByParentIds(pId));
+    }
+
+    return ids;
+  }
 ```
 
 
