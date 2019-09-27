@@ -1,6 +1,10 @@
 # JSBasics
 Javascript and typescript basics
 ```
+
+CSS to refer
+https://caniuse.com/#search=flex
+
 var number = ["d","e","h"];
 
 let s:any=["a","b"];
