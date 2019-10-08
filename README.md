@@ -5,6 +5,16 @@ Javascript and typescript basics
 CSS to refer
 https://caniuse.com/#search=flex
 
+--------------------------------------
+Merge/flatten an array of arrays
+[['1'],['2]]  => [1,2]
+var merged = [].concat.apply([], arrays);
+
+console.log(merged);
+
+-------------------------------------
+
+
 var number = ["d","e","h"];
 
 let s:any=["a","b"];
@@ -13,8 +23,6 @@ let obj={
   id:1,
   roll:3
 }
-
-
 
 
 
