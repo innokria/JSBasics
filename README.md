@@ -1,3 +1,19 @@
+
+#sql
+
+sub query
+
+
+select *
+from (select item_id, count(*)
+from file
+group by item_id
+ ) i2
+where i2.count>400;
+
+
+
+
 # JSBasics
 Javascript and typescript basics
 ```
