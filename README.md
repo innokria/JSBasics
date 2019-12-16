@@ -12,7 +12,9 @@ group by item_id
 where i2.count>400;
 
 
-
+#sublime
+control+a
+conteol+shift+l to select whole and then replace
 
 # JSBasics
 Javascript and typescript basics
