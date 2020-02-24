@@ -20,6 +20,45 @@ conteol+shift+l to select whole and then replace
 Javascript and typescript basics
 ```
 
+
+
+
+
+
+unqiure item in array
+ 
+ ss=[
+   {  key :'1',
+     value:'abc'
+
+   },
+      {  key :'12',
+     value:'ab2c'
+
+   },
+      {  key :'12',
+     value:'adef'
+
+   },
+      {  key :'1',
+     value:'a54353'
+
+   },
+ ]
+ 
+ const uniqueBuckets = ss.filter(
+        (obj, index, self) => index === self.findIndex((t) => t.key === obj.key),
+      );
+
+      console.log(JSON.stringify(uniqueBuckets,null,2))
+      
+      
+
+
+
+
+
+
 CSS to refer
 https://caniuse.com/#search=flex
 
