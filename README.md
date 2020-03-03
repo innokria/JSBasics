@@ -1,4 +1,23 @@
 
+# array are pass by ref
+
+primitive type variables like strings and numbers are always passed by value.
+Arrays and Objects are passed by reference or by value based on these conditions:
+
+let a =['a' ,'b']
+
+let b = [];
+b.push(a)
+
+b[0].push('1')
+console.log(a)
+console.log(b)
+
+both will get updated -> a , b ,1 
+
+
+
+
 #sql
 
 sub query
