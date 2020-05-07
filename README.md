@@ -17,8 +17,8 @@ both will get updated -> a , b ,1
 
 
 # convert  const a=[1,2]   to ["a","b]
--  Array.from(a)
-['a', 'b']
+-const a =[12345];
+-console.log(Array.from(a.toString())) ->["a","b]
 #sql
 
 sub query
