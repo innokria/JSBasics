@@ -16,8 +16,9 @@ console.log(b)
 both will get updated -> a , b ,1 
 
 
-
-
+# convert  const a=[1,2]   to ["a","b]
+-  Array.from(a)
+['a', 'b']
 #sql
 
 sub query
