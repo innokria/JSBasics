@@ -41,7 +41,20 @@ Javascript and typescript basics
 ```
 
 
+#parse
+{ key: '2020-05-2*',
+  from: 1590364800000,
+  from_as_string: '2020-05-25T00:00:00.000Z',
+  doc_count: 0 }
+  
+  ---solution 
+  const oe = ((((agg || {}).recent || {}).buckets || [])[0] || {}).from_as_string || {};
 
+  
+  
+  
+  
+  # parse ends
 
 
 
