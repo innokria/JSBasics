@@ -2,6 +2,29 @@
 
 #unique object in an array
 const unique = [...new Map(arr.map(item => [item[key], item])).values()]
+How does it work
+First the array is remapped in a way that it can be used as an input for a Map.
+
+arr.map(item => [item[key], item]);
+
+which means each item of the array will be transformed in another array with 2 elements; the selected key as first element and the entire initial item as second element, this is called an entry (ex. array entries, map entries). And here is the official doc with an example showing how to add array entries in Map constructor.
+
+Example when key is place:
+
+[["here", {place: "here",  name: "x", other: "other stuff1" }], ...]
+Secondly, we pass this modified array to the Map constructor and here is the magic happening. Map will eliminate the duplicate keys values, keeping only last inserted value of the same key. Note: Map keeps the order of insertion. (check difference between Map and object)
+
+new Map(entry array just mapped above)
+
+Third we use the map values to retrieve the original items, but this time without duplicates.
+
+new Map(mappedArr).values()
+
+And last one is to add those values into a fresh new array so that it can look as the initial structure and return that:
+
+return [...new Map(mappedArr).values()]
+
+https://stackoverflow.com/questions/2218999/remove-duplicates-from-an-array-of-objects-in-javascript
 
 # array are pass by ref
 
