@@ -4,6 +4,8 @@
 ```
 const unique = [...new Map(arr.map(item => [item[key], item])).values()]
 ```
+
+```
 const arr = [
     {place: "here",  name: "x", other: "other stuff1" },
     {place: "there", name: "x", other: "other stuff2" },
@@ -19,7 +21,7 @@ const arr1 = getUniqueListBy(arr, 'place')
 
 console.log("Unique by place")
 console.log(JSON.stringify(arr1))
-
+```
 # How does it work
 ```
 First the array is remapped in a way that it can be used as an input for a Map.
