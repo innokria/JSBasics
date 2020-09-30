@@ -1,9 +1,12 @@
 
 
 # unique object in an array
-'''
+```
 const unique = [...new Map(arr.map(item => [item[key], item])).values()]
-How does it work
+```
+
+# How does it work
+```
 First the array is remapped in a way that it can be used as an input for a Map.
 
 arr.map(item => [item[key], item]);
@@ -26,7 +29,7 @@ And last one is to add those values into a fresh new array so that it can look a
 return [...new Map(mappedArr).values()]
 
 https://stackoverflow.com/questions/2218999/remove-duplicates-from-an-array-of-objects-in-javascript
-'''
+```
 # array are pass by ref
 
 primitive type variables like strings and numbers are always passed by value.
