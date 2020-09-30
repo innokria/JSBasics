@@ -1,4 +1,8 @@
 
+
+#unique object in an array
+const unique = [...new Map(arr.map(item => [item[key], item])).values()]
+
 # array are pass by ref
 
 primitive type variables like strings and numbers are always passed by value.
