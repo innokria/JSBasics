@@ -1,6 +1,8 @@
 
 #serverless deploy more than 50mb packages
 https://hackernoon.com/exploring-the-aws-lambda-deployment-limits-9a8384b0bec3
+
+# https://medium.com/@ajmeyghani/interview-questions-1145e3763bce
 # unique object in an array
 ```
 const unique = [...new Map(arr.map(item => [item[key], item])).values()]
